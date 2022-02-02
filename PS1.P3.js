@@ -31,3 +31,33 @@ const splitStringByC = (str, splitter) => {
 
 const res = splitStringByC(word, splitter)
 console.log(res(word))
+
+
+const createObj = (str) => {
+    let modifiedString = "";
+    let numberReplaced = 0;
+
+    for (char of str){
+        if (char === 'a') {
+            modifiedString += 'A';
+            numberReplaced += 1;
+        }
+        else modifiedString += char
+    }
+
+    return {
+        "originalString": str,
+        "modifiedString": modifiedString,
+        "numberReplaced": numberReplaced,
+        "length": str.length
+    }
+}
+
+const replaceLowerCaseA = (str, createObj) => {
+    return (str) => {
+        return createObj.call(this, str);
+    }
+}
+
+const res2 = replaceLowerCaseA(word, createObj)
+console.log(res2(word))
