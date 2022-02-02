@@ -2,20 +2,6 @@
 
 // Got help from example here https://blog.logrocket.com/understanding-javascript-decorators/
 
-// const splitStringByC = (str, callback) => {
-//     let split = [];
-//     let tempStr = "";
-//     for (const char of str) {
-//         tempStr += char;
-//         if (char === 'c') {
-//             split.push(tempStr);
-//             tempStr = char
-//         } 
-//     }
-//     tempStr? split.push(tempStr) : ""
-//     return split;
-// }
-
 let word = 'supercalifragilisticexpialidocious'
 
 const splitter = (str) => {
