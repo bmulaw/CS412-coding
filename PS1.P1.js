@@ -1,10 +1,10 @@
 // PS1.P1
-const reverseAlphabeticalOrder = (str: String): String => {
+const reverseAlphabeticalOrder = (str) => {
     return str.split("").sort().reverse().join("")
 }
 
-const testReverseAlphabeticalOrder = ():boolean => {
+const testReverseAlphabeticalOrder = () => {
     return 'xuutsssrrppoollliiiiiiigfeedcccaaa' === reverseAlphabeticalOrder("supercalifragilisticexpialidocious")
 }
 
-testReverseAlphabeticalOrder()
+console.log(testReverseAlphabeticalOrder())
