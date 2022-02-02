@@ -1,1 +1,6 @@
-This is Bernard Mulaw's coding for CS412. Spring 2022.
+Focused on:
+<ul>
+  <li> understanding JS functions </li>
+  <li> understanding decorators in JS </li>
+  <li> understanding callbacks in JS </li>
+</ul>
