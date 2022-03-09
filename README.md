@@ -1,1 +1,1 @@
-This is Bernard Mulaw's coding for CS412. Spring 2022.
+This is Bernard Mulaw's coding for CS412. Spring 2022 - PS2.
