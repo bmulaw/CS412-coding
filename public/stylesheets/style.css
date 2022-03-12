@@ -1,21 +1,30 @@
 h1 {
-    text-align: center;
+  text-align: center;
 }
 
 form {
-    padding: 5% 0% 0% 10%;
+  padding: 5% 0% 0% 10%;
 }
 
 input {
-    width: 400px;
-    height: 20px;
+  width: 400px;
+  height: 20px;
 }
 
-button {
-    padding: 0.5% 5%;
-    margin-left: 5%;
-    text-align: center;
-    background-color: rgb(134, 230, 134);
-    border: solid 2px rgba(68, 65, 65, 0.233);
-    cursor: pointer;
+#getBtn {
+  padding: 0.5% 5%;
+  margin-left: 5%;
+  text-align: center;
+  background-color: rgb(134, 230, 134);
+  border: solid 2px rgba(68, 65, 65, 0.233);
+  cursor: pointer;
+}
+
+#postBtn {
+  padding: 0.5% 5%;
+  margin-left: 5%;
+  text-align: center;
+  background-color: yellow;
+  border: solid 2px rgba(68, 65, 65, 0.233);
+  cursor: pointer;
 }

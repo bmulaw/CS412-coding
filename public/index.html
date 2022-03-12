@@ -8,10 +8,15 @@
     <title>Document</title>
 </head>
 <body>
-    <h1> Hey There User! </h1>
-    <form action="http://localhost:3000/test" method="get">
-        <input type="text" name="name" placeholder="First Name">
-        <button type="submit" style="border-radius: 25px;">Send</button>
-    </form>
+<h1> Hey There User! </h1>
+
+<form action="http://localhost:3000/get-customer" method="get">
+    <button id="getBtn" type="submit" style="border-radius: 25px;">Display Generic Welcome Page</button>
+</form>
+
+<form action="http://localhost:3000/get-customer-name" method="post">
+    <input type="text" name="name" placeholder="First Name">
+    <button id="postBtn" type="submit" style="border-radius: 25px;">Display Welcome Page With Your Name</button>
+</form>
 </body>
 </html>
