@@ -2,8 +2,9 @@ const express = require('express');
 const router = express.Router();
 
 
-router.get('/', (req, res, next) => {
-  res.render('index', { title: 'Express' });
+router.post('/test', (req, res, next) => {
+  console.log(req)
+  res.render('index', { title: 'Hey there, ' + req.body.name });
 });
 
 module.exports = router;
