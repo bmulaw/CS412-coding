@@ -19,7 +19,6 @@ router.post('/capital', (req, res, next) => {
       offset: 20
     }
   };
-  console.log(url)
   
   request(requestOptions, (err, response, body) => {
     if (err) {
@@ -45,13 +44,13 @@ router.post('/population', (req, res, next) => {
       offset: 20
     }
   };
-  console.log(url)
   
   request(requestOptions, (err, response, body) => {
     if (err) {
       console.log(err);
     } else if (response.statusCode === 200) {
       let population = body[0].population;
+      population = population.toLocaleString("en-US");
       res.render('index', { population: `${req.body.country}'s population is ${population}`, country: req.body.country, title: 'Country'});
     } else {
       console.log(response.statusCode);
@@ -70,9 +69,7 @@ router.post('/flag', (req, res, next) => {
     qs: {
       offset: 20
     }
-  };
-  console.log(url)
-  
+  };  
   
   request(requestOptions, (err, response, body) => {
     if (err) {
