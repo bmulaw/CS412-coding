@@ -3,7 +3,6 @@ const express = require('express')
 const app = express()
 
 const getCapital = (query) => {
-
     return new Promise ((resolve, reject) => {
         axios.request(query)
         .then(res => {
@@ -31,9 +30,7 @@ app.get('/capital', (req, res) => {
           capital = errorMessage;
         })
     
-    // setTimeout for 1.5 second (1500 ms) so we wait for the result of the API request above
     setTimeout(() => {
-    //   res.send(`${country}'s capital is ${capital}`)
       res.json({
         "statusCode": 200,
         "statusMessage": "Connection is good",
