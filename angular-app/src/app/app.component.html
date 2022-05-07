@@ -1,0 +1,38 @@
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+<!-- * * * * * * * * * * * The content below * * * * * * * * * * * -->
+<!-- * * * * * * * * * * is only a placeholder * * * * * * * * * * -->
+<!-- * * * * * * * * * * and can be replaced. * * * * * * * * * * * -->
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+<!-- * * * * * * * * * Delete the template below * * * * * * * * * * -->
+<!-- * * * * * * * to get started with your project! * * * * * * * * -->
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+
+<style>
+  *{
+    text-align: center;
+  }
+  
+  h3 {
+    margin-top: 15%;
+  }
+
+  h4 {
+    color: blue;
+  }
+</style>
+
+<!-- Toolbar -->
+<div class="toolbar" role="banner">
+  <h3>Welcome to Country API App</h3>
+</div>
+
+<div class="content" role="main">
+  <form [formGroup]="volunteerForm" (ngSubmit)="onSumbit()">
+    <input formControlName="country" type="text">
+    <button>Submit</button>
+  </form>
+  <br>
+  <h4> {{ countryCapital }} is the capital of {{ country }}  </h4>
+</div>
+
+<router-outlet></router-outlet>
